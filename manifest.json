@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Hash and store",
+    "description": "Hash and store your passwords!",
+    "version": "1.0",
+    "permissions": ["storage"],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }

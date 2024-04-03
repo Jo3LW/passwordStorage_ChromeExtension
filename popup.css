@@ -1,0 +1,155 @@
+/* Apply blur effect */
+.blurred {
+    filter: blur(3px); /* Adjust the blur intensity as needed */
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Light blue background */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #2c3e50; /* Dark blue header text */
+}
+
+.container {
+    max-width: 800px; /* Adjust as needed */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White container background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for input elements and labels */
+.container input[type="text"],
+.container input[type="number"],
+.container input[type="checkbox"],
+.container label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.container label {
+    width: 150px; /* Set a fixed width for labels to ensure alignment */
+}
+
+/* Styling for buttons */
+.container button {
+    padding: 12px 20px; /* Adjust button padding */
+    border: none;
+    border-radius: 6px; /* Adjust button border radius */
+    background-color: #3498db; /* Bright blue button background */
+    color: #ffffff; /* White button text */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.container button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Styling for the generated password */
+.password-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.password-container .generated-password {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.password-container button#copyButton {
+    padding: 12px 20px;
+    border-radius: 6px;
+    background-color: #3498db;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+    border: none;
+}
+
+.password-container button#copyButton:hover {
+    background-color: #2980b9;
+}
+
+
+/* Styling for action buttons */
+.action-buttons {
+    margin-top: 20px;
+}
+
+/* Styling for the table container */
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto; /* Add horizontal scroll if content exceeds width */
+    overflow-y: auto; /* Add vertical scroll if content exceeds height */
+}
+
+/* Styling for the table */
+#dataTable {
+    min-width: 100%; /* Ensure table takes full width of container */
+    border-collapse: collapse;
+}
+
+#dataTable th, #dataTable td {
+    border: 1px solid #bdc3c7; /* Light gray border */
+    padding: 10px;
+    text-align: left;
+}
+
+/* Styling for the blur checkbox */
+.blur-checkbox {
+    text-align: center;
+}
+
+.blur-checkbox input[type="checkbox"] {
+    margin: 0;
+    transform: scale(1.5); /* Increase checkbox size */
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  

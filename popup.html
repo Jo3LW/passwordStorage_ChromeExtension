@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hash and store your important passwords!</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <h1>Hash and store your important passwords!</h1>
+  <div class="container">
+    <input type="text" id="userInput" placeholder="Enter your data">
+    <input type="text" id="tagInput" placeholder="Enter a tag (optional)">
+    
+    <div class="options">
+      <div class="input-group">
+        <label for="includeUppercaseCheckbox">Include Uppercase:</label>
+        <input type="checkbox" id="includeUppercaseCheckbox">
+      </div>
+
+      <div class="input-group">
+        <label for="includeNumbersCheckbox">Include Numbers:</label>
+        <input type="checkbox" id="includeNumbersCheckbox">
+      </div>
+
+      <div class="input-group">
+        <label for="includeOtherCharsCheckbox">Include Other Characters:</label>
+        <input type="checkbox" id="includeOtherCharsCheckbox">
+      </div>
+
+      <div class="input-group">
+        <label for="passwordLengthInput">Password Length:</label>
+        <input type="number" id="passwordLengthInput" min="8" max="32" value="12">
+      </div>
+    </div>
+
+    <button id="generateButton">Generate</button>
+    <div class="password-container">
+      <span id="generatedPassword" class="generated-password"></span>
+      <button id="copyButton" type="button" class="tooltip">Copy
+        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+      </button>
+    </div>
+    
+
+    <div class="action-buttons">
+      <button id="saveButton">Save</button>
+      <button id="clearButton">Clear All</button>
+    </div>
+    
+    <div class="table-container">
+      <table id="dataTable">
+        <tr>
+          <th>Password</th>
+          <th>Hashed Password</th>
+          <th>Tag</th>
+          <th>Action</th>
+          <th>Blur</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
